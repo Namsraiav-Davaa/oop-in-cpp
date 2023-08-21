@@ -1,0 +1,3 @@
+g++ -std=c++11 classes_and_objects.cpp
+./a.out
+./a.out < in.txt 
