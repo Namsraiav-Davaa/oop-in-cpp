@@ -3,6 +3,7 @@ using namespace std;
 
 class Employee
 {
+    // encapsulated variables
 private:
     string Name;
     string Company;
@@ -26,6 +27,26 @@ public:
         return Name;
     }
 
+    void setCompany(string company)
+    {
+        Company = company;
+    }
+
+    string getCompany()
+    {
+        return Company;
+    }
+
+    void setAge(int age)
+    {
+        Age = age;
+    }
+
+    int getAge()
+    {
+        return Age;
+    }
+
     Employee(string name, string company, int age)
     {
         Name = name;
@@ -41,6 +62,10 @@ int main()
 
     Employee employee2 = Employee("John", "Amazon", 27);
     employee2.IntroduceYourself();
+
+    employee1.setAge(26);
+
+    cout << employee1.getName() << " is " << employee1.getAge() << " years old." << endl;
 
     return 0;
 }
