@@ -39,7 +39,10 @@ public:
 
     void setAge(int age)
     {
-        Age = age;
+        if (age >= 18)
+        {
+            Age = age;
+        }
     }
 
     int getAge()
